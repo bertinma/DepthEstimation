@@ -82,7 +82,3 @@ if __name__ == "__main__":
 
 				plt.imsave(result_path.joinpath(left_im.name), result)
 
-				# break				
-
-				result = None
-

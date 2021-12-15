@@ -3,6 +3,7 @@ import cv2
 from matplotlib import pyplot as plt 
 from icecream import ic 
 
+"https://www.andreasjakl.com/understand-and-apply-stereo-rectification-for-depth-maps-part-2/"
 
 def drawlines(img1src, img2src, lines, pts1src, pts2src):
 	''' img1 - image on which we draw the epilines for the points in img2
