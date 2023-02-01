@@ -84,12 +84,12 @@ class DM_Estimator():
 		self.pts2 = []
 
 		for i, (m, n) in enumerate(self.matches):
-		    if m.distance < 0.7*n.distance:
-		        # Keep this keypoint pair
-		        self.matchesMask[i] = [1, 0]
-		        self.good.append(m)
-		        self.pts2.append(self.right_kp[m.trainIdx].pt)
-		        self.pts1.append(self.left_kp[m.queryIdx].pt)
+			if m.distance < 0.7*n.distance:	
+				# Keep this keypoint pair
+				self.matchesMask[i] = [1, 0]
+				self.good.append(m)
+				self.pts2.append(self.right_kp[m.trainIdx].pt)
+				self.pts1.append(self.left_kp[m.queryIdx].pt)
 
 	def showMatches(self, L, R):
 		draw_params = dict(matchColor=(0, 255, 0),
